@@ -1,0 +1,22 @@
+name = "praetorscion/tuffinputreplication"
+version = "0.1.0"
+description = "Experimental Implementation of custom replication of player inputs built with tuffreplication."
+repository = "https://github.com/PraetorScion/tuffinputreplication"
+license = "MIT"
+
+[target]
+environment = "roblox"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
+
+[dependencies]
+axis = { name = "killergg/axis", version = "^0.1.0-rc.1.4" }
